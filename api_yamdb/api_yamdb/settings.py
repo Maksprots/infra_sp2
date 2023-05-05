@@ -40,7 +40,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'd.urls'
+ROOT_URLCONF = 'api_yamdb.urls'
 
 TEMPLATES_DIR = BASE_DIR / 'templates'
 TEMPLATES = [
@@ -59,14 +59,14 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'd.wsgi.application'
+WSGI_APPLICATION = 'api_yamdb.wsgi.application'
 
 # Database
 
 DATABASES = {
     'default': {
-        'ENGINE': os.getenv('DB_ENGINE'),
-        'NAME': os.getenv('DB_NAME'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
         'USER': os.getenv('POSTGRES_USER'),
         'PASSWORD': os.getenv('POSTGRES_PASSWORD'),
         'HOST': os.getenv('DB_HOST'),
