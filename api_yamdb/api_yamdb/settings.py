@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 BASE_DIR = Path(__file__).resolve().parent
 
 load_dotenv()
-SECRET_KEY='%6vt=))gyr%nl2o$7_@x#*ogqj$t&m23^&zk9jm4=emlf=tzbt'
+SECRET_KEY = '%6vt=))gyr%nl2o$7_@x#*ogqj$t&m23^&zk9jm4=emlf=tzbt'
 
 DEBUG = False
 
@@ -72,7 +72,7 @@ DATABASES = {
         'HOST': os.getenv('DB_HOST'),
         'PORT': os.getenv('DB_PORT')
     }
-} 
+}
 
 # Password validation
 
