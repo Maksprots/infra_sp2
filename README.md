@@ -34,6 +34,7 @@ DB_PORT=5432
 SECRET_KEY = ''
 ```
 - запускаем:  ``` docker-compose up -d --build ``` в директории infra
+- для остановки ``` docker-compose down ``` в этой же директории
 -  создаем и применяем миграции 
 ``` 
 docker-compose exec web python manage.py migrate
